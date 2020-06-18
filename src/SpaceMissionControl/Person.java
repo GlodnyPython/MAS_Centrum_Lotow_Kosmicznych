@@ -15,7 +15,7 @@ public class Person {
     Pilot pil;
     MissionSpecialist ms;
 
-    protected Person (String name, String surname, Timestamp dateOfBirth, int mass) {
+    private Person (String name, String surname, Timestamp dateOfBirth, int mass) {
         this.name        = name;
         this.surname     = surname;
         this.dateOfBirth = dateOfBirth;
@@ -74,6 +74,7 @@ public class Person {
                 e.printStackTrace();
             }
             if (ms.specCount() == 0){
+                ms.remove();
                 ms = null;
             }
         }else{
@@ -86,7 +87,7 @@ public class Person {
         return mass;
     }
 
-    public String getInfo() {
+    public String getInfo() { //TODO Dodać dziedziczenie
         String text = "Astronauta: \n" +
                    "Name: "          + name +
                 "\n Surname: "       + surname +

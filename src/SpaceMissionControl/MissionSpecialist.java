@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 public class MissionSpecialist {
 
-    private Person person;
+    static ArrayList<MissionSpecialist> missionSpecialists = new ArrayList<>();
 
+    private Person person;
     ArrayList<String> specialization = new ArrayList<>();
+    ArrayList<Crew> assignments = new ArrayList<>();
 
 
     private MissionSpecialist(Person person){
@@ -14,8 +16,8 @@ public class MissionSpecialist {
     }
     protected MissionSpecialist(Person person, String spec){
         this.person = person;
-
         addSpecialization(spec);
+        missionSpecialists.add(this);
     }
 
     public void addSpecialization(String spec){
@@ -48,8 +50,25 @@ public class MissionSpecialist {
         }
     }
 
+    public void remove(){
+        person = null;
+        missionSpecialists.remove(this);
+    };
+
     public int specCount(){
         return specialization.size();
+    }
+
+    public Person getPerson(){
+        return person;
+    }
+
+    public void addAssignment(Crew crew){
+        assignments.add(crew);
+    }
+
+    public void deleteAssignment(Crew crew){
+        assignments.remove(crew);
     }
 
 }
