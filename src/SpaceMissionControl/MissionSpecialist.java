@@ -48,4 +48,8 @@ public class MissionSpecialist {
         }
     }
 
+    public int specCount(){
+        return specialization.size();
+    }
+
 }

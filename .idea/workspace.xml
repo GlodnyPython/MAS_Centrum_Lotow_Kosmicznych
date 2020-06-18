@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="[VIP] Person and MissionSpecialist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Commander.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/MissionSpecialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/MissionSpecialist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Pilot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1dSogmvzrNpE4k1GmEKab4uF9Mk" />
   <component name="ProjectViewState">
@@ -87,8 +89,17 @@
       <option name="presentableId" value="Default" />
       <updated>1592075864062</updated>
       <workItem from="1592075867831" duration="2977000" />
-      <workItem from="1592427972985" duration="5904000" />
+      <workItem from="1592427972985" duration="6252000" />
+      <workItem from="1592481082538" duration="3652000" />
     </task>
+    <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
+      <created>1592441519417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592441519417</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +115,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[VIP] Person and MissionSpecialist" />
+    <option name="LAST_COMMIT_MESSAGE" value="[VIP] Person and MissionSpecialist" />
   </component>
 </project>
