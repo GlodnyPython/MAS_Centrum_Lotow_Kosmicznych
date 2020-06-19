@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="Crew Implemented">
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="Service module and below implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/CargoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/CargoModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LandingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LandingModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/ServiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/ServiceModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LiftRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LiftRocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <workItem from="1592427972985" duration="6252000" />
       <workItem from="1592481082538" duration="11359000" />
       <workItem from="1592507815469" duration="2711000" />
-      <workItem from="1592567357206" duration="2809000" />
+      <workItem from="1592567357206" duration="6910000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -114,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592496235109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Service module and below implemented">
+      <created>1592589096572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592589096572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +141,8 @@
     <MESSAGE value="[VIP] Person and MissionSpecialist" />
     <MESSAGE value="Person implemented" />
     <MESSAGE value="Crew Implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crew Implemented" />
+    <MESSAGE value="Service module and below implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Service module and below implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592496237183">
