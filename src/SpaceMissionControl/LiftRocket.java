@@ -15,6 +15,8 @@ public class LiftRocket {
 
     int totalMass = 0;
 
+    ArrayList<SpaceCraft> spaceCrafts = new ArrayList<>();
+
     private LiftRocket(String type, int ownMass, int lunchFuelMass, int liftMass){
         if(type == null){throw new NullPointerException("Type not provided.");}
         this.type = type;
@@ -48,5 +50,13 @@ public class LiftRocket {
 
     public int getLunchFuelMass() {
         return lunchFuelMass;
+    }
+
+    public void assignToSpacecraft(SpaceCraft sc){
+        spaceCrafts.add(sc);
+    }
+
+    public void unassignFromSpacecraft(SpaceCraft sc){
+        spaceCrafts.remove(sc);
     }
 }
