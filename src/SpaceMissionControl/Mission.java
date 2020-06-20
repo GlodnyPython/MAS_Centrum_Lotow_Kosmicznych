@@ -134,7 +134,7 @@ public class Mission {
             active = null;
             landing.changeStatus("Failed");
         }
-        if ( completed != null){ //TODO
+        if ( completed != null){
             failed = new Failed(this, null, completed.startDate, completed.landingDate, failDate, failDesc);
             completed = null;
             landing.changeStatus("Failed");
@@ -149,10 +149,36 @@ public class Mission {
             landing.changeStatus("Completed");
         }
     }
-    getMissionStatus()
+    public void getMissionStatus(){
+        if (planned != null){
+            planned.getMissionStatus();
+        }
+        if (active != null){
+            active.getMissionStatus();
+        }
+        if ( completed != null){
+            completed.getMissionStatus();
+        }
+        if ( failed != null){
+            failed.getMissionStatus();
+        }
+    }
     public String toString(){
         return "Mission " + getMissionCode() + " Space craft: " + spaceCraft.name;
     }
-    getMissionRaport()
+    public void getMissionRaport(){
+        if (planned != null){
+            planned.getMissionReport();
+        }
+        if (active != null){
+            active.getMissionReport();
+        }
+        if ( completed != null){
+            completed.getMissionReport();
+        }
+        if ( failed != null){
+            failed.getMissionReport();
+        }
+    }
 
 }

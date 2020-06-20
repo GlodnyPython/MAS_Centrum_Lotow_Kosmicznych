@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="Start and landing implemented WIP misja">
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="mission status implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +96,7 @@
       <workItem from="1592481082538" duration="11359000" />
       <workItem from="1592507815469" duration="2711000" />
       <workItem from="1592567357206" duration="20636000" />
-      <workItem from="1592635564878" duration="22500000" />
+      <workItem from="1592635564878" duration="25119000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -165,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592670229424</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mission status implemented">
+      <created>1592677333729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592677333729</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +197,8 @@
     <MESSAGE value="Program implemented WIP misja" />
     <MESSAGE value="S WIP misja" />
     <MESSAGE value="Start and landing implemented WIP misja" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start and landing implemented WIP misja" />
+    <MESSAGE value="mission status implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="mission status implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1592611723407">
@@ -213,10 +217,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611540435" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592670248468">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592677337389">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592670248468" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592677337389" />
     <state x="1123" y="457" key="refactoring.ChangeSignatureDialog" timestamp="1592588423143">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

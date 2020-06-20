@@ -19,13 +19,13 @@ public class Completed {
         this.landingDate = landingDate;
         if(missionEndDate == null){throw new NullPointerException("Mission end date not provided.");}
         this.missionEndDate = missionEndDate;
-        if(missionEndDate == null){throw new NullPointerException("Fail cause not provided.");}
+        if(missionEndDescription == null){throw new NullPointerException("Fail cause not provided.");}
         this.missionEndDescription = missionEndDescription;
     }
 
 
     public String getMissionStatus(){
-        return "Failed";
+        return "Completed";
     }
 
     public String getMissionReport(){
