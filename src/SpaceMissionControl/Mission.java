@@ -51,6 +51,9 @@ public class Mission {
     }
 
     public void addCrew(){
+        if (crew != null){
+            crew.remove();
+        }
         crew = Crew.createCrew(this);
     }
 

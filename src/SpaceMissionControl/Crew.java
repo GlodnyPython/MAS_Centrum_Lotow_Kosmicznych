@@ -22,6 +22,14 @@ public class Crew {
         return new Crew(mission);
     }
 
+    public void remove(){
+        com.deleteAssignment(this);
+        pil.deleteAssignment(this);
+        for (MissionSpecialist  ms : missionSpecialists){
+            ms.deleteAssignment(this);
+        }
+    }
+
 
     public void addCommander(Commander com){
         if (pil.getPerson() != com.getPerson()){

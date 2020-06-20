@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="mission report implemented">
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="crew implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <workItem from="1592481082538" duration="11359000" />
       <workItem from="1592507815469" duration="2711000" />
       <workItem from="1592567357206" duration="20636000" />
-      <workItem from="1592635564878" duration="25948000" />
+      <workItem from="1592635564878" duration="26784000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -173,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592680371992</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="crew implemented">
+      <created>1592681838767</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592681838767</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +213,8 @@
     <MESSAGE value="Start and landing implemented WIP misja" />
     <MESSAGE value="mission status implemented" />
     <MESSAGE value="mission report implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="mission report implemented" />
+    <MESSAGE value="crew implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="crew implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1592611723407">
@@ -223,10 +233,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611540435" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592680374944">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592681871217">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592680374944" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592681871217" />
     <state x="1123" y="457" key="refactoring.ChangeSignatureDialog" timestamp="1592588423143">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
