@@ -39,10 +39,18 @@ public class Main {
         Person.personsList.get(1).updatePilotLicence("SB83876239486");
         Person.personsList.get(2).addSpecialization("Fizyk");
 
-        Program.addProgram("Space Launch System", "SLS", "Podstawowy program kosmiczny");
+        Program.addProgram("SpaceX Dragon", "DRAGON", "Podstawowy program kosmiczny");
 
-        //Program.programs.get("SLS").newMission();
+        LiftRocket.createLiftRocket("Falcon 9", 1000, 10000, 30000);
 
+        SpaceCraft.createSpaceCraft("Capsule","Dragon 9", "111", 1000, 4, 200, 1000, LiftRocket.liftRcketsList.get(0) );
+
+        Launchpad.createLaunchpad("Kennedy Space Center", "39A");
+        LandingSpot.createLaningSpot("water", "Pacyfik");
+
+        Program.programs.get("DRAGON").newMission(1, "Pierwszy lot programu Dragon", SpaceCraft.spaceCraftsList.get(0),Launchpad.launchpads.get(0),new Date(2020, 06,30), 100, 1000, 0, 0);
+
+        System.out.println("test");
 
         try
         {

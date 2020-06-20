@@ -114,6 +114,17 @@ public class Mission  extends ObjectPlus{
             System.out.println("Misja przekroczyła dopuszczalną masę startową");
         }
 
+        int crewCount;
+        if (crew == null){
+            crewCount = 0;
+        }else{
+            crewCount = 2 + crew.missionSpecialists.size();
+        }
+        if (crewCount > spaceCraft.getCrewAmount()){
+            System.out.println("Misja zawiera więcej załogi niż statek jest w stanie pomieścić");
+        }
+
+
     }
     public void launchMission(Date startDate, Date estimatedLandingDate){
         checkMissionCorrectness();

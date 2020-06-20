@@ -204,6 +204,10 @@ public class SpaceCraft  extends ObjectPlus{
         return totalMaxCargoMass;
     }
 
+    public int getCrewAmount() {
+        return crewAmount;
+    }
+
     //ASSIGNER
 
     public void assignToMission(Mission mission){

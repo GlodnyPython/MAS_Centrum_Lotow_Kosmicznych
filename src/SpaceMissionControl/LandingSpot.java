@@ -24,6 +24,10 @@ public class LandingSpot  extends ObjectPlus{
         }
     }
 
+    public static void createLaningSpot(String type, String name){
+        landingSpots.add(new LandingSpot(type, name));
+    }
+
     public void addLanding(Landing landing){
         if(landing == null){throw new NullPointerException("Landing cannot be empty.");}
         landings.add(landing);
