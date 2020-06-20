@@ -1,9 +1,6 @@
 package SpaceMissionControl;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Program {
 
@@ -33,8 +30,8 @@ public class Program {
 
     }
 
-    public void newMission(int missionNumber, String description, int cargoMass, int operationalFuelMass, int serviceModulesFuelMass, int planetEscapeFuelMass){
-        missionMap.put(missionNumber, new Mission(this, description, cargoMass, operationalFuelMass, serviceModulesFuelMass, planetEscapeFuelMass));
+    public void newMission(int missionNumber, String description, SpaceCraft spaceCraft, Launchpad launchpad, Date plannedStartDate, int cargoMass, int operationalFuelMass, int cargoModulesFuelMass, int planetEscapeFuelMass){
+        missionMap.put(missionNumber, new Mission(this, missionNumber, description, spaceCraft, launchpad, plannedStartDate, cargoMass, operationalFuelMass, cargoModulesFuelMass, planetEscapeFuelMass));
     }
 
 }
