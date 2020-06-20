@@ -198,6 +198,10 @@ public class SpaceCraft {
         return maxLaunchMass;
     }
 
+    public int getTotalMaxCargoMass() {
+        return totalMaxCargoMass;
+    }
+
     //ASSIGNER
 
     public void assignToMission(Mission mission){

@@ -19,15 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="SpaceCraft implemented">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfxswt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfxswt1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran3.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran4.fxml" afterDir="false" />
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="Screens added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAS_Centrum_Lotow_Kosmicznych.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MAS_Centrum_Lotow_Kosmicznych.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Lunchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Launchpad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,8 @@
       <workItem from="1592427972985" duration="6252000" />
       <workItem from="1592481082538" duration="11359000" />
       <workItem from="1592507815469" duration="2711000" />
-      <workItem from="1592567357206" duration="20193000" />
+      <workItem from="1592567357206" duration="20636000" />
+      <workItem from="1592635564878" duration="5791000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592606321715</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Screens added">
+      <created>1592613722134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592613722134</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +175,8 @@
     <MESSAGE value="Service module and below implemented" />
     <MESSAGE value="LiftRocket implemented" />
     <MESSAGE value="SpaceCraft implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpaceCraft implemented" />
+    <MESSAGE value="Screens added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screens added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1592611723407">

@@ -1,4 +1,4 @@
 package SpaceMissionControl;
 
-public class Lunchpad {
+public class Launchpad {
 }
