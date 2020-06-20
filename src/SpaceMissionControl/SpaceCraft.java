@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public class SpaceCraft {
+public class SpaceCraft  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     static ArrayList<SpaceCraft> spaceCraftsList = new ArrayList<>();
 

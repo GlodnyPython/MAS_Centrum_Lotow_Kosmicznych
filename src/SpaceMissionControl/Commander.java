@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public class Commander {
+public class Commander  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     static ArrayList<Commander> commanders = new ArrayList<>();
     ArrayList<Crew> assignments = new ArrayList<>();

@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.Date;
 
-public class Planned {
+public class Planned  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     Mission mission;
 

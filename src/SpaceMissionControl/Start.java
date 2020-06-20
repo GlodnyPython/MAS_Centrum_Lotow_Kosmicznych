@@ -4,7 +4,9 @@ import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class Start {
+public class Start  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     Launchpad launchpad;
     Mission mission;

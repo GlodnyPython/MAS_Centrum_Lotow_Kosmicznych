@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public abstract class ServiceModule {
+public abstract class ServiceModule  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     String serialNumber;
     int ownMass;

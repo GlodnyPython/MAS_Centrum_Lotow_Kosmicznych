@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class LandingModule extends ServiceModule{
 
+    private static final long serialVersionUID = 1L;
+
     static ArrayList<LandingModule> landingModulesList = new ArrayList<>();
 
     int landCrewAmound;

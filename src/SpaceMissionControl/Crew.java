@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public class Crew {
+public class Crew  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
 
     Commander com;

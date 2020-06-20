@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public class LandingSpot {
+public class LandingSpot  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     static ArrayList<LandingSpot> landingSpots = new ArrayList<>();
 

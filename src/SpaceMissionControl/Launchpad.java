@@ -2,7 +2,10 @@ package SpaceMissionControl;
 
 import java.util.ArrayList;
 
-public class Launchpad {
+public class Launchpad  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
+
     static ArrayList<Launchpad> launchpads = new ArrayList<>();
 
     String loaction;

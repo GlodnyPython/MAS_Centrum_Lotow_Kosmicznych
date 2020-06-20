@@ -1,10 +1,10 @@
 package SpaceMissionControl;
 
-import jdk.internal.org.objectweb.asm.tree.InnerClassNode;
-
 import java.util.ArrayList;
 
-public class LiftRocket {
+public class LiftRocket  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     static ArrayList<LiftRocket> liftRcketsList = new ArrayList<>();
 

@@ -2,7 +2,9 @@ package SpaceMissionControl;
 
 import java.util.*;
 
-public class Program {
+public class Program  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     static Map<String, Program> programs = new TreeMap<>();
 

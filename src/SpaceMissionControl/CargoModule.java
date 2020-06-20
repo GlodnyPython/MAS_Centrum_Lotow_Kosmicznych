@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class CargoModule extends ServiceModule {
 
+    private static final long serialVersionUID = 1L;
+
     static ArrayList<CargoModule> cargoModulesList = new ArrayList<>();
 
 

@@ -4,7 +4,9 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Mission {
+public class Mission  extends ObjectPlus{
+
+    private static final long serialVersionUID = 1L;
 
     Program program;
 

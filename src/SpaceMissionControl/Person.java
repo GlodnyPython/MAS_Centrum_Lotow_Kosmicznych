@@ -2,20 +2,23 @@ package SpaceMissionControl;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 
-public class Person {
+public class Person  extends ObjectPlus{
 
-    private static ArrayList<Person> personsList = new ArrayList<>();
+    private static final long serialVersionUID = 1L;
+
+    static ArrayList<Person> personsList = new ArrayList<>();
     String name;
     String surname;
-    Timestamp dateOfBirth;
+    Date dateOfBirth;
     int mass;
 
     Commander com;
     Pilot pil;
     MissionSpecialist ms;
 
-    private Person (String name, String surname, Timestamp dateOfBirth, int mass) {
+    private Person (String name, String surname, Date dateOfBirth, int mass) {
         this.name        = name;
         this.surname     = surname;
         this.dateOfBirth = dateOfBirth;
@@ -23,7 +26,7 @@ public class Person {
 
     }
 
-    public static void addPerson (String name, String surname, Timestamp dateOfBirth, int mass) {
+    public static void addPerson (String name, String surname, Date dateOfBirth, int mass) {
         personsList.add(new Person(name, surname, dateOfBirth, mass));
     }
 
@@ -91,7 +94,7 @@ public class Person {
         String text = "Astronauta: \n" +
                    "Name: "          + name +
                 "\n Surname: "       + surname +
-                "\n Date of Birth: " + dateOfBirth +
+                "\n Date of Birth: " + dateOfBirth.toString() +
                 "\n Mass: "          + mass
                 ;
 
