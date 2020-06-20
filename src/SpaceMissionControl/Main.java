@@ -48,10 +48,24 @@ public class Main {
         Launchpad.createLaunchpad("Kennedy Space Center", "39A");
         LandingSpot.createLaningSpot("water", "Pacyfik");
 
-        Program.programs.get("DRAGON").newMission(1, "Pierwszy lot programu Dragon", SpaceCraft.spaceCraftsList.get(0),Launchpad.launchpads.get(0),new Date(2020, 06,30), 100, 1000, 0, 0);
+        Program.programs.get("DRAGON").newMission(1, "Pierwszy lot programu Dragon", SpaceCraft.spaceCraftsList.get(0),Launchpad.launchpads.get(0),new Date(2020, 6,30), 100, 1000, 0, 0);
+
+        Program.programs.get("DRAGON").missionMap.get(1).addCrew();
+        Program.programs.get("DRAGON").missionMap.get(1).crew.addCommander(Person.personsList.get(0).getCom());
+        Program.programs.get("DRAGON").missionMap.get(1).crew.addPilot(Person.personsList.get(1).getPil());
+        Program.programs.get("DRAGON").missionMap.get(1).crew.addMissionSpecialist(Person.personsList.get(2).getMs());
 
         System.out.println("test");
 
+        Program.programs.get("DRAGON").missionMap.get(1).launchMission(new Date(2020, 6, 30), new Date (2020,9,30));
+
+        System.out.println(Program.programs.get("DRAGON").missionMap.get(1).getMissionRaport());
+
+        Program.programs.get("DRAGON").missionMap.get(1).updateLaningSpot(LandingSpot.landingSpots.get(0), new Date(2020, 9,30,22,30));
+
+        Program.programs.get("DRAGON").missionMap.get(1).completeMission(new Date(2020, 9,30,22,30,4 ), new Date(2020, 9,30,22,30,4 ),"Landed in ocean");
+
+        System.out.println(Program.programs.get("DRAGON").missionMap.get(1).getMissionRaport());
         try
         {
             FileOutputStream fileOutput = new FileOutputStream("programDump");

@@ -85,6 +85,20 @@ public class Person  extends ObjectPlus{
         }
     }
 
+    public Commander getCom() {
+        if(com == null){throw new NullPointerException("This person is not a commander.");}
+        return com;
+    }
+
+    public Pilot getPil() {
+        if(pil == null){throw new NullPointerException("This person is not a pilot.");}
+        return pil;
+    }
+
+    public MissionSpecialist getMs() {
+        if(ms == null){throw new NullPointerException("This person is not a mission specialist.");}
+        return ms;
+    }
 
     public int getMass() {
         return mass;

@@ -34,8 +34,8 @@ public class Active  extends ObjectPlus{
         }else{
             return mission.toString()
                 + "\n Status: " + getMissionStatus()
-                + "Data startu: " + startDate.toString()
-                + "Przewidywana data lądowania: " + estimatedLandingDate.toString();
+                + "\n Data startu: " + startDate.toString()
+                + "\n Przewidywana data lądowania: " + estimatedLandingDate.toString();
         }
     }
 

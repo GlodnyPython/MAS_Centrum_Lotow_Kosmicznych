@@ -166,7 +166,9 @@ public class Mission  extends ObjectPlus{
         if(active != null){
             completed = new Completed(this, active.startDate, landingDate, missionEndDate, missionEndDescription);
             active=null;
-            landing.changeStatus("Completed");
+            if(landing != null) {
+                landing.changeStatus("Completed");
+            }
         }
     }
     public void getMissionStatus(){
@@ -186,19 +188,20 @@ public class Mission  extends ObjectPlus{
     public String toString(){
         return "Mission " + getMissionCode() + " Space craft: " + spaceCraft.name;
     }
-    public void getMissionRaport(){
+    public String getMissionRaport(){
         if (planned != null){
-            planned.getMissionReport();
+            return planned.getMissionReport();
         }
         if (active != null){
-            active.getMissionReport();
+            return active.getMissionReport();
         }
         if ( completed != null){
-            completed.getMissionReport();
+            return completed.getMissionReport();
         }
         if ( failed != null){
-            failed.getMissionReport();
+            return failed.getMissionReport();
         }
+        return null;
     }
 
 }

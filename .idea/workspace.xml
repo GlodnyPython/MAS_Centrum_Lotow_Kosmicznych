@@ -19,12 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="ObjectPlus implemented">
+    <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LandingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LandingSpot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +107,7 @@
       <workItem from="1592481082538" duration="11359000" />
       <workItem from="1592507815469" duration="2711000" />
       <workItem from="1592567357206" duration="20636000" />
-      <workItem from="1592635564878" duration="30473000" />
+      <workItem from="1592635564878" duration="34679000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -203,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592686737363</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixes">
+      <created>1592688057347</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592688057347</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +247,8 @@
     <MESSAGE value="mission report implemented" />
     <MESSAGE value="crew implemented" />
     <MESSAGE value="ObjectPlus implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="ObjectPlus implemented" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1592611723407">
@@ -255,6 +267,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="393" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611712617" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592693832592">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592693832592" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1592693832592">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592693832592" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1592693832591">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592693832591" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1592693832592">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592693832592" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1592611540435">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -35,14 +35,14 @@ public class Failed  extends ObjectPlus{
         String landingDateStr = null;
         String failDateStr = null;
 
-        if (landingDate != null) {startDateStr =  "\nData startu: " + startDate.toString();}
-        if (plannedStartDate != null) {plannedStartDateStr = "\nData planowanego startu: " + plannedStartDate.toString();}
-        if (landingDate != null) {landingDateStr = "\nData lądowania: " + landingDate.toString();}
-        if (failDate != null) {failDateStr = "\nData niepowodzenia: " + failDate.toString();}
+        if (landingDate != null) {startDateStr =  "\n Data startu: " + startDate.toString();}
+        if (plannedStartDate != null) {plannedStartDateStr = "\n Data planowanego startu: " + plannedStartDate.toString();}
+        if (landingDate != null) {landingDateStr = "\n Data lądowania: " + landingDate.toString();}
+        if (failDate != null) {failDateStr = "\n Data niepowodzenia: " + failDate.toString();}
 
         return mission.toString() +
-                "\nStatus: " + getMissionStatus()
-                +"\nPrzyczyna: " + failDescription
+                "\n Status: " + getMissionStatus()
+                +"\n Przyczyna: " + failDescription
                 +startDateStr
                 +plannedStartDateStr
                 +landingDateStr

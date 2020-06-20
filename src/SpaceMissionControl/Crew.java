@@ -9,7 +9,7 @@ public class Crew  extends ObjectPlus{
 
     Commander com;
     Pilot pil;
-    ArrayList<MissionSpecialist> missionSpecialists;
+    ArrayList<MissionSpecialist> missionSpecialists = new ArrayList<>();
 
     int crewMass;
 
@@ -34,30 +34,9 @@ public class Crew  extends ObjectPlus{
 
 
     public void addCommander(Commander com){
-        if (pil.getPerson() != com.getPerson()){
-
-            boolean append = false;
-            for (MissionSpecialist ms : missionSpecialists){
-                if(ms.getPerson() == com.getPerson()){
-                    append = true;
-                }
-            }
-
-            if (append){
-                System.out.println("This person is Mission Specialist, cannot assign Commander role");
-            }else{
-                if (com == null){
-                    System.out.println("Changed Mision Commnder");
-                    this.com.deleteAssignment(this);
-                }
-                this.com = com;
-                this.com.addAssignment(this);
-                calculateCrewMass();
-            }
-
-        }else{
-            System.out.println("This person is Pilot, cannot assign Commander role");
-        }
+        this.com = com;
+        this.com.addAssignment(this);
+         calculateCrewMass();
     }
 
     public void addPilot(Pilot pil){
@@ -135,10 +114,17 @@ public class Crew  extends ObjectPlus{
 
     public void calculateCrewMass(){
         int mass = 0;
+        if(com != null){
         mass += com.getPerson().getMass();
-        mass += pil.getPerson().getMass();
-        for (MissionSpecialist ms : missionSpecialists){
-            mass += ms.getPerson().getMass();
+        }
+        if(pil != null) {
+            mass += pil.getPerson().getMass();
+        }
+
+        if(missionSpecialists.size() > 0) {
+            for (MissionSpecialist ms : missionSpecialists) {
+                mass += ms.getPerson().getMass();
+            }
         }
 
         crewMass = mass;

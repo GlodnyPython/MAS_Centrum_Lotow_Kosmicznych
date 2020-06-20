@@ -14,14 +14,8 @@ public class LandingSpot  extends ObjectPlus{
     ArrayList<Landing> landings = new ArrayList<>();
 
     public LandingSpot(String type, String name) {
-        if (type == "land") {
-            if (type == "water"){
-             this.type = type;
-             this.name = name;
-            }
-        }else{
-            throw new NullPointerException("Only land and water can be type provided.");
-        }
+        this.type = type;
+        this.name = name;
     }
 
     public static void createLaningSpot(String type, String name){

@@ -22,7 +22,7 @@ public class Planned  extends ObjectPlus{
     public String getMissionReport(){
         return mission.toString()
                 + "\n Status: " + getMissionStatus()
-                + "Planowana data startu: " + plannedStartDate.toString();
+                + "\n Planowana data startu: " + plannedStartDate.toString();
     }
 
 

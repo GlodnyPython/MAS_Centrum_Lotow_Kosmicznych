@@ -35,13 +35,13 @@ public class Completed  extends ObjectPlus{
         String landingDateStr = null;
         String missionEndDateStr = null;
 
-        if (startDate != null) {startDateStr =  "\nData startu: " + startDate.toString();}
-        if (landingDate != null) {landingDateStr = "\nData lądowania: " + landingDate.toString();}
-        if (missionEndDate != null) {missionEndDateStr = "\nData zakończenia misji: " + missionEndDate.toString();}
+        if (startDate != null) {startDateStr =  "\n Data startu: " + startDate.toString();}
+        if (landingDate != null) {landingDateStr = "\n Data lądowania: " + landingDate.toString();}
+        if (missionEndDate != null) {missionEndDateStr = "\n Data zakończenia misji: " + missionEndDate.toString();}
 
         return mission.toString() +
-                "\nStatus: " + getMissionStatus()
-                +"\nPrzyczyna: " + missionEndDescription
+                "\n Status: " + getMissionStatus()
+                +"\n Przyczyna: " + missionEndDescription
                 +startDateStr
                 +landingDateStr
                 +missionEndDateStr;
