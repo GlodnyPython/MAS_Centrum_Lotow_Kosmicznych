@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Crew {
 
-    static ArrayList<Crew> crews = new ArrayList<>();
 
     Commander com;
     Pilot pil;
@@ -12,12 +11,13 @@ public class Crew {
 
     int crewMass;
 
-    private Crew(){
+    Mission mission;
+
+    private Crew(Mission mission){
+        if(mission == null){throw new NullPointerException("Missioon not provided.");}
+        this.mission = mission;
     }
 
-    public static void createEmptyCrew(){
-        crews.add(new Crew());
-    }
 
     public void addCommander(Commander com){
         if (pil.getPerson() != com.getPerson()){
