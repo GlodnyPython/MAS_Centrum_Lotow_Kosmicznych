@@ -18,6 +18,10 @@ public class Crew {
         this.mission = mission;
     }
 
+    public static Crew createCrew(Mission mission){
+        return new Crew(mission);
+    }
+
 
     public void addCommander(Commander com){
         if (pil.getPerson() != com.getPerson()){

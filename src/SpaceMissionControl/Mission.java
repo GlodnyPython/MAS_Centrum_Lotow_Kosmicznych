@@ -50,6 +50,10 @@ public class Mission {
         return program.getShortName() + " " + missionNumber;
     }
 
+    public void addCrew(){
+        crew = Crew.createCrew(this);
+    }
+
     public void updateLaunchpad(Launchpad lp, Date date){
         if (start != null) {
             start.remove();
