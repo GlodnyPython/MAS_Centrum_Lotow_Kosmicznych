@@ -48,4 +48,9 @@ public class Completed  extends ObjectPlus{
     }
 
 
+    public void remove(){
+        mission = null;
+    }
+
+
 }

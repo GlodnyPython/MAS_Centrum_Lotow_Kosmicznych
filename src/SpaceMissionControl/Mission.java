@@ -145,17 +145,20 @@ public class Mission  extends ObjectPlus{
     public void abortMission(Date failDate, String failDesc){
         if (planned != null){
             failed = new Failed(this, planned.plannedStartDate, null, null, failDate, failDesc);
+            planned.remove();
             planned = null;
             landing.changeStatus("Cancelled");
             start.changeStatus("Failed");
         }
         if (active != null){
             failed = new Failed(this, null, active.startDate, null, failDate, failDesc);
+            active.remove();
             active = null;
             landing.changeStatus("Failed");
         }
         if ( completed != null){
             failed = new Failed(this, null, completed.startDate, completed.landingDate, failDate, failDesc);
+            active.remove();
             completed = null;
             landing.changeStatus("Failed");
         }
@@ -165,6 +168,7 @@ public class Mission  extends ObjectPlus{
     public void completeMission(Date landingDate, Date missionEndDate, String missionEndDescription){
         if(active != null){
             completed = new Completed(this, active.startDate, landingDate, missionEndDate, missionEndDescription);
+            active.remove();
             active=null;
             if(landing != null) {
                 landing.changeStatus("Completed");
@@ -186,7 +190,7 @@ public class Mission  extends ObjectPlus{
         }
     }
     public String toString(){
-        return "Mission " + getMissionCode() + " Space craft: " + spaceCraft.name;
+        return "Mission " + getMissionCode() + " Satek: " + spaceCraft.name;
     }
     public String getMissionRaport(){
         if (planned != null){

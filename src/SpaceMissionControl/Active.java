@@ -39,4 +39,8 @@ public class Active  extends ObjectPlus{
         }
     }
 
+    public void remove(){
+        mission = null;
+    }
+
 }

@@ -25,6 +25,10 @@ public class Planned  extends ObjectPlus{
                 + "\n Planowana data startu: " + plannedStartDate.toString();
     }
 
+    public void remove(){
+        mission = null;
+    }
+
 
 
 

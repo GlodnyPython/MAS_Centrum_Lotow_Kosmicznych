@@ -1,12 +1,18 @@
 package SpaceMissionControl;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import java.io.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
 
 
-public class Main {
+public class Main extends Application {
 
     public static void main(String[] args) {
 
@@ -63,7 +69,9 @@ public class Main {
 
         Program.programs.get("DRAGON").missionMap.get(1).updateLaningSpot(LandingSpot.landingSpots.get(0), new Date(2020, 9,30,22,30));
 
-        Program.programs.get("DRAGON").missionMap.get(1).completeMission(new Date(2020, 9,30,22,30,4 ), new Date(2020, 9,30,22,30,4 ),"Landed in ocean");
+        launch(args);
+
+        //Program.programs.get("DRAGON").missionMap.get(1).completeMission(new Date(2020, 9,30,22,30,4 ), new Date(2020, 9,30,22,30,4 ),"Landed in ocean");
 
         System.out.println(Program.programs.get("DRAGON").missionMap.get(1).getMissionRaport());
         try
@@ -78,5 +86,13 @@ public class Main {
         {
             i.printStackTrace();
         }
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("WyborMisji.fxml"));
+        stage.setTitle(Program.programs.get("DRAGON").name);
+        stage.setScene(new Scene(root, 426,685));
+
     }
 }
