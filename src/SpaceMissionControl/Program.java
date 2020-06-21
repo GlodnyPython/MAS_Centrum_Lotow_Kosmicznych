@@ -14,6 +14,11 @@ public class Program  extends ObjectPlus{
 
     public Map<Integer, Mission> missionMap = new TreeMap<>();
 
+    /**
+     * @param name
+     * @param shortName
+     * @param description
+     */
     private Program(String name, String shortName, String description){
         if(name == null){throw new NullPointerException("Name not provided.");}
         this.name = name;
@@ -23,15 +28,38 @@ public class Program  extends ObjectPlus{
         this.description = description;
     }
 
+    /**
+     * @param name
+     * @param shortName
+     * @param description
+     *
+     * Creates new program
+     */
     static public void addProgram(String name, String shortName, String description){
         programs.put(shortName, new Program(name, shortName, description));
     }
 
+    /**
+     * @return Program short name
+     */
     public String getShortName() {
         return shortName;
 
     }
 
+    /**
+     * @param missionNumber
+     * @param description
+     * @param spaceCraft
+     * @param launchpad
+     * @param plannedStartDate
+     * @param cargoMass
+     * @param operationalFuelMass
+     * @param cargoModulesFuelMass
+     * @param planetEscapeFuelMass
+     *
+     * Creates new mission assigned to this program
+     */
     public void newMission(int missionNumber, String description, SpaceCraft spaceCraft, Launchpad launchpad, Date plannedStartDate, int cargoMass, int operationalFuelMass, int cargoModulesFuelMass, int planetEscapeFuelMass){
         missionMap.put(missionNumber, new Mission(this, missionNumber, description, spaceCraft, launchpad, plannedStartDate, cargoMass, operationalFuelMass, cargoModulesFuelMass, planetEscapeFuelMass));
     }

@@ -14,6 +14,14 @@ public class Failed  extends ObjectPlus{
     Date failDate;
     String failDescription;
 
+    /**
+     * @param mission
+     * @param plannedStartDate
+     * @param startDate
+     * @param landingDate
+     * @param failDate
+     * @param failDecription
+     */
     public Failed(Mission mission, Date plannedStartDate, Date startDate, Date landingDate, Date failDate, String failDecription){
         if(mission == null){throw new NullPointerException("Mission not provided.");}
         this.mission = mission;
@@ -25,10 +33,16 @@ public class Failed  extends ObjectPlus{
     }
 
 
+    /**
+     * @return Current miision status (is called by class mission)
+     */
     public String getMissionStatus(){
         return "Failed";
     }
 
+    /**
+     * @return Detailed mission report with dated (is called by class mission)
+     */
     public String getMissionReport(){
         String startDateStr = null;
         String plannedStartDateStr = null;

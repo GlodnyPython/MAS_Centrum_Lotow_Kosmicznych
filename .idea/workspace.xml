@@ -21,8 +21,26 @@
   <component name="ChangeListManager">
     <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/CargoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/CargoModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Commander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Crew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Failed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Landing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Landing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LandingModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LandingModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LandingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LandingSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Launchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Launchpad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/LiftRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/LiftRocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisjiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisjiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/MissionSpecialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/MissionSpecialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/ServiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/ServiceModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/SpaceCraft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +120,7 @@
       <workItem from="1592507815469" duration="2711000" />
       <workItem from="1592567357206" duration="20636000" />
       <workItem from="1592635564878" duration="34679000" />
-      <workItem from="1592719996006" duration="11201000" />
+      <workItem from="1592719996006" duration="14933000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -216,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592731029997</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixes">
+      <created>1592735715760</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1592735715760</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,10 +286,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734956410" />
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1592732719301">
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1592738828828">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592732719301" />
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592738828828" />
     <state x="1110" y="410" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1592734097590">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -301,10 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734098625" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592686738902">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592735727970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592686738902" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592735727970" />
     <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592683327600">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

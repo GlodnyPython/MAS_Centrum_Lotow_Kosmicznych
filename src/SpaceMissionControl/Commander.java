@@ -13,12 +13,21 @@ public class Commander  extends ObjectPlus{
 
     private String licenceNumber;
 
+    /**
+     * @param person
+     * @param licenceNumber
+     */
     protected Commander ( Person person, String licenceNumber) {
         this.person = person;
         this.licenceNumber = licenceNumber;
         commanders.add(this);
     }
 
+    /**
+     * @param licNum
+     *
+     * is called by person to create association
+     */
     public void updateComLicence(String licNum){
         if (licNum == null){
             person = null;
@@ -28,14 +37,27 @@ public class Commander  extends ObjectPlus{
 
     }
 
+    /**
+     * @return person who this commander is
+     */
     public Person getPerson(){
         return person;
     }
 
+    /**
+     * @param crew
+     *
+     * Assigns commander to mission
+     */
     public void addAssignment(Crew crew){
         assignments.add(crew);
     }
 
+    /**
+     * @param crew
+     *
+     * removes mission assignment
+     */
     public void deleteAssignment(Crew crew){
         assignments.remove(crew);
     }

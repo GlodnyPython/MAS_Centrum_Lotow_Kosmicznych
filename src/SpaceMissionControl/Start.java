@@ -14,6 +14,11 @@ public class Start  extends ObjectPlus{
     Date date;
     String status;
 
+    /**
+     * @param mission
+     * @param lp
+     * @param date
+     */
     protected Start(Mission mission, Launchpad lp, Date date){
         launchpad = lp;
         this.date = date;
@@ -21,12 +26,18 @@ public class Start  extends ObjectPlus{
         launchpad.addStart(this);
     }
 
+    /**
+     * Removes association from LaunchPad class and association to mission and launch pad
+     */
     public void remove(){
         mission = null;
         launchpad = null;
         launchpad.removeStart(this);
     }
 
+    /**
+     * @param status changes status based on current status from misiion class
+     */
     public void changeStatus(String status){
         if (status == "Cancelled") {
             this.status = status;

@@ -12,6 +12,13 @@ public class LandingModule extends ServiceModule{
     int maxCargoMass;
     int maxFuel;
 
+    /**
+     * @param serialNumber
+     * @param ownMass
+     * @param landCrewAmound
+     * @param maxCargoMass
+     * @param maxFuel
+     */
     private LandingModule (String serialNumber, int ownMass, int landCrewAmound, int maxCargoMass, int maxFuel){
         super(serialNumber,ownMass);
 
@@ -25,10 +32,16 @@ public class LandingModule extends ServiceModule{
         landingModulesList.add(new LandingModule(serialNumber, ownMass, landCrewAmound, maxCargoMass, maxFuel));
     }
 
+    /**
+     * @return Max cargo carried by thits laning module
+     */
     public int getMaxCargoMass() {
         return maxCargoMass;
     }
 
+    /**
+     * @return Max fuel load carrid by this landing module
+     */
     public int getMaxFuel() {
         return maxFuel;
     }

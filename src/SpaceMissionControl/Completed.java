@@ -13,6 +13,13 @@ public class Completed  extends ObjectPlus{
     Date missionEndDate;
     String missionEndDescription;
 
+    /**
+     * @param mission
+     * @param startDate
+     * @param landingDate
+     * @param missionEndDate
+     * @param missionEndDescription
+     */
     public Completed(Mission mission, Date startDate, Date landingDate, Date missionEndDate, String missionEndDescription){
         if(mission == null){throw new NullPointerException("Mission not provided.");}
         this.mission = mission;
@@ -26,10 +33,17 @@ public class Completed  extends ObjectPlus{
     }
 
 
+    /**
+     * @return Current miision status (is called by class mission)
+     *
+     */
     public String getMissionStatus(){
         return "Completed";
     }
 
+    /**
+     * @return Detailed mission report with dated (is called by class mission)
+     */
     public String getMissionReport(){
         String startDateStr = null;
         String landingDateStr = null;
@@ -48,6 +62,9 @@ public class Completed  extends ObjectPlus{
     }
 
 
+    /**
+     *
+     */
     public void remove(){
         mission = null;
     }

@@ -18,6 +18,12 @@ public class Person  extends ObjectPlus{
     Pilot pil;
     MissionSpecialist ms;
 
+    /**
+     * @param name
+     * @param surname
+     * @param dateOfBirth
+     * @param mass
+     */
     private Person (String name, String surname, Date dateOfBirth, int mass) {
         this.name        = name;
         this.surname     = surname;
@@ -26,15 +32,31 @@ public class Person  extends ObjectPlus{
 
     }
 
+    /**
+     * @param name
+     * @param surname
+     * @param dateOfBirth
+     * @param mass
+     *
+     * Adds new person
+     */
     public static void addPerson (String name, String surname, Date dateOfBirth, int mass) {
         personsList.add(new Person(name, surname, dateOfBirth, mass));
     }
 
+    /**
+     * @param mass
+     *
+     * Updates person mass
+     */
     public void updateMass(int mass){
         this.mass = mass;
     }
 
 
+    /**
+     * @param comLicNum Makes person Commander and updates licence or makes person not commander
+     */
     public void updateCommanderLicence(String comLicNum){
         if (com == null){
             com = new Commander(this, comLicNum);
@@ -48,6 +70,11 @@ public class Person  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param pilLicNum
+     *
+     * Makes person Pilot and updates licence or makes person not pilot
+     */
     public void updatePilotLicence(String pilLicNum){
         if (pil == null){
             pil = new Pilot(this, pilLicNum);
@@ -61,6 +88,11 @@ public class Person  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param spec
+     *
+     * Makes person mission Specialist with specialization or adds new specialization
+     */
     public void addSpecialization (String spec){
         if (ms == null){
             ms = new MissionSpecialist(this, spec);
@@ -69,6 +101,9 @@ public class Person  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param spec Removes specialization or makes person not a mission specialist
+     */
     public void removeSpecialization(String spec){
         if (ms != null) {
             try {
@@ -85,25 +120,40 @@ public class Person  extends ObjectPlus{
         }
     }
 
+    /**
+     * @return Commnander class
+     */
     public Commander getCom() {
         if(com == null){throw new NullPointerException("This person is not a commander.");}
         return com;
     }
 
+    /**
+     * @return Pilot class
+     */
     public Pilot getPil() {
         if(pil == null){throw new NullPointerException("This person is not a pilot.");}
         return pil;
     }
 
+    /**
+     * @return Mission Specialist class
+     */
     public MissionSpecialist getMs() {
         if(ms == null){throw new NullPointerException("This person is not a mission specialist.");}
         return ms;
     }
 
+    /**
+     * @return Person's mass
+     */
     public int getMass() {
         return mass;
     }
 
+    /**
+     * @return Basic personal info
+     */
     public String getInfo() { //TODO Dodać dziedziczenie
         String text = "Astronauta: \n" +
                    "Name: "          + name +

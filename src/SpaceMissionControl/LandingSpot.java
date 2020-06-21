@@ -18,15 +18,29 @@ public class LandingSpot  extends ObjectPlus{
         this.name = name;
     }
 
+    /**
+     * @param type
+     * @param name
+     */
     public static void createLaningSpot(String type, String name){
         landingSpots.add(new LandingSpot(type, name));
     }
 
+    /**
+     * @param landing
+     *
+     * Adds new landing. Called from Landing class
+     */
     public void addLanding(Landing landing){
         if(landing == null){throw new NullPointerException("Landing cannot be empty.");}
         landings.add(landing);
     }
 
+    /**
+     * @param landing
+     *
+     * Removes landing. Called from Landing class
+     */
     public void removeLanding(Landing landing){
             if(landing == null){throw new NullPointerException("Landing cannot be empty.");}
         landings.remove(landing);

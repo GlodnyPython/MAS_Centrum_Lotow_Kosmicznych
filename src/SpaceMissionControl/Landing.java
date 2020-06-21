@@ -12,6 +12,11 @@ public class Landing  extends ObjectPlus{
     Date date;
     String status;
 
+    /**
+     * @param mission
+     * @param landingSpot
+     * @param date
+     */
     public Landing(Mission mission, LandingSpot landingSpot, Date date){
         this.landingSpot = landingSpot;
         this.date = date;
@@ -19,12 +24,18 @@ public class Landing  extends ObjectPlus{
         landingSpot.addLanding(this);
     }
 
+    /**
+     * Removes association from LandingSpot class and association to mission and landing spot
+     */
     public void remove(){
         mission = null;
         landingSpot = null;
         landingSpot.removeLanding(this);
     }
 
+    /**
+     * @param status changes status based on current status from misiion class
+     */
     public void changeStatus(String status){
         if (status == "Cancelled") {
             this.status = status;

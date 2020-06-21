@@ -13,15 +13,30 @@ public class MissionSpecialist  extends ObjectPlus{
     ArrayList<Crew> assignments = new ArrayList<>();
 
 
+    /**
+     * @param person Makes person without specialization mission specialist
+     */
     private MissionSpecialist(Person person){
         this.person = person;
     }
+
+    /**
+     * @param person
+     * @param spec
+     *
+     * Makes person mission specialist
+     */
     protected MissionSpecialist(Person person, String spec){
         this.person = person;
         addSpecialization(spec);
         missionSpecialists.add(this);
     }
 
+    /**
+     * @param spec
+     *
+     * Adds specialization
+     */
     public void addSpecialization(String spec){
 
         boolean append = false;
@@ -37,6 +52,11 @@ public class MissionSpecialist  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param spec
+     *
+     * Removes specialization
+     */
     public void removeSpecialization(String spec){
 
         boolean append = false;
@@ -52,23 +72,40 @@ public class MissionSpecialist  extends ObjectPlus{
         }
     }
 
+    /**
+     * Removes assignment to mission. Called from Crew class
+     */
     public void remove(){
         person = null;
         missionSpecialists.remove(this);
     };
 
+    /**
+     * @return Number of specializations
+     */
     public int specCount(){
         return specialization.size();
     }
 
+    /**
+     * @return person who this mission specialist is
+     */
     public Person getPerson(){
         return person;
     }
 
+    /**
+     * @param crew
+     *
+     * Assigns to crew. Called form Crew class
+     */
     public void addAssignment(Crew crew){
         assignments.add(crew);
     }
 
+    /**
+     * @param crew Removes crew assignment. Called form Crew class
+     */
     public void deleteAssignment(Crew crew){
         assignments.remove(crew);
     }

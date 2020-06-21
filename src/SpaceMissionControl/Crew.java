@@ -20,10 +20,17 @@ public class Crew  extends ObjectPlus{
         this.mission = mission;
     }
 
+    /**
+     * @param mission
+     * @return creted crew to mission class
+     */
     public static Crew createCrew(Mission mission){
         return new Crew(mission);
     }
 
+    /**
+     * Called by mission. Removes mission and connections to this mission from crew members
+     */
     public void remove(){
         com.deleteAssignment(this);
         pil.deleteAssignment(this);
@@ -33,12 +40,22 @@ public class Crew  extends ObjectPlus{
     }
 
 
+    /**
+     * @param com
+     *
+     * Assigns commander to this crew
+     */
     public void addCommander(Commander com){
         this.com = com;
         this.com.addAssignment(this);
          calculateCrewMass();
     }
 
+    /**
+     * @param pil
+     *
+     * Assigns pilot to this crew
+     */
     public void addPilot(Pilot pil){
         if (com.getPerson() != pil.getPerson()){
 
@@ -67,6 +84,11 @@ public class Crew  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param ms
+     *
+     * Assings mission specialist to this crew
+     */
     public void addMissionSpecialist(MissionSpecialist ms){
         if (com.getPerson() != ms.getPerson()){
             if (pil.getPerson() != ms.getPerson()){
@@ -94,6 +116,11 @@ public class Crew  extends ObjectPlus{
         }
     }
 
+    /**
+     * @param ms
+     *
+     * Removes mission specialist from this crew and removed connection to this crew
+     */
     public void removeMissionSpecialist(MissionSpecialist ms){
         boolean append = false;
         for (MissionSpecialist m : missionSpecialists){
@@ -112,6 +139,9 @@ public class Crew  extends ObjectPlus{
         }
     }
 
+    /**
+     * Calculate and saves crew mass
+     */
     public void calculateCrewMass(){
         int mass = 0;
         if(com != null){
@@ -130,6 +160,9 @@ public class Crew  extends ObjectPlus{
         crewMass = mass;
     }
 
+    /**
+     * @return crew mass calculated in calculateCrewMass method
+     */
     public int getCrewMass(){
         calculateCrewMass();
         return crewMass;

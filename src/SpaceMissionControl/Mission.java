@@ -29,6 +29,18 @@ public class Mission  extends ObjectPlus{
     private Completed completed;
     private Failed failed;
 
+    /**
+     * @param program
+     * @param missionNumber
+     * @param description
+     * @param spaceCraft
+     * @param launchpad
+     * @param plannedStartDate
+     * @param cargoMass
+     * @param operationalFuelMass
+     * @param cargoModulesFuelMass
+     * @param planetEscapeFuelMass
+     */
     public Mission (Program program, int missionNumber, String description, SpaceCraft spaceCraft, Launchpad launchpad, Date plannedStartDate, int cargoMass, int operationalFuelMass, int cargoModulesFuelMass, int planetEscapeFuelMass){
         if(program == null){throw new NullPointerException("Program not provided.");}
         this.program = program;
@@ -37,6 +49,7 @@ public class Mission  extends ObjectPlus{
         this.description = description;
         if(spaceCraft == null){throw new NullPointerException("Space craft not provided.");}
         this.spaceCraft = spaceCraft;
+        spaceCraft.assignToMission(this);
         if(launchpad == null){throw new NullPointerException("Launch pad not provided.");}
         updateLaunchpad(launchpad, plannedStartDate);
 
@@ -48,10 +61,16 @@ public class Mission  extends ObjectPlus{
         this.planetEscapeFuelMass = planetEscapeFuelMass;
     }
 
+    /**
+     * @return Mission code based on progarm name and mission numer
+     */
     public String getMissionCode(){
         return program.getShortName() + " " + missionNumber;
     }
 
+    /**
+     * Adds new crew and removes old one (if exists)
+     */
     public void addCrew(){
         if (crew != null){
             crew.remove();
@@ -59,12 +78,25 @@ public class Mission  extends ObjectPlus{
         crew = Crew.createCrew(this);
     }
 
+    /**
+     * @param lp
+     * @param date
+     *
+     * Updated launch information
+     */
     public void updateLaunchpad(Launchpad lp, Date date){
         if (start != null) {
             start.remove();
         }
         start = new Start(this, lp, date);
     }
+
+    /**
+     * @param ls
+     * @param date
+     *
+     * Updates landing information
+     */
     public void updateLaningSpot(LandingSpot ls, Date date){
         if (landing != null) {
             landing.remove();
@@ -72,10 +104,19 @@ public class Mission  extends ObjectPlus{
         landing = new Landing(this, ls, date);
 
     }
+
+    /**
+     * @param cargo
+     *
+     * Sets new cargo value
+     */
     public void addCargo(int cargo){ //przypisanie ładunku cargo
         cargoMass = cargo;
     }
 
+    /**
+     * Calculates and saves total mission mass
+     */
     public void calcTotalMass(){
         int tm = 0;
         tm += spaceCraft.getTotalOwnMass();
@@ -89,6 +130,12 @@ public class Mission  extends ObjectPlus{
 
         totalMass = tm;
     }
+
+    /**
+     * @return
+     *
+     * Calculates and saves availavle cargo left to carry
+     */
     public int calcAvailableCargoMass(){
         int availabeMass = spaceCraft.getMaxLiftMass() - totalMass;
         int availableCargo = spaceCraft.getTotalMaxCargoMass() - cargoMass;
@@ -100,11 +147,19 @@ public class Mission  extends ObjectPlus{
         }
     }
 
+    /**
+     * @return
+     *
+     * Checks and saves mass to fuel ratio
+     */
     public int checkMassFuelRatio(){
         int availableMass = spaceCraft.getMaxLiftMass() - totalMass;
         return availableMass;
     }
 
+    /**
+     * Checks and saves info if mission is ready to launch
+     */
     public void checkMissionCorrectness(){
         calcTotalMass();
         if (totalMass <= spaceCraft.getMaxLiftMass()){
@@ -126,6 +181,13 @@ public class Mission  extends ObjectPlus{
 
 
     }
+
+    /**
+     * @param startDate
+     * @param estimatedLandingDate
+     *
+     * Changes mission status to active and updates mission information with start details
+     */
     public void launchMission(Date startDate, Date estimatedLandingDate){
         checkMissionCorrectness();
         if (isMissionCorrect ==true) {
@@ -142,6 +204,13 @@ public class Mission  extends ObjectPlus{
 
         }
     }
+
+    /**
+     * @param failDate
+     * @param failDesc
+     *
+     * Changes mission status to failed and updates mission information with fail details
+     */
     public void abortMission(Date failDate, String failDesc){
         if (planned != null){
             failed = new Failed(this, planned.plannedStartDate, null, null, failDate, failDesc);
@@ -165,6 +234,14 @@ public class Mission  extends ObjectPlus{
 
 
     }
+
+    /**
+     * @param landingDate
+     * @param missionEndDate
+     * @param missionEndDescription
+     *
+     * Changes mission status to completed and updates mission information with competition's details
+     */
     public void completeMission(Date landingDate, Date missionEndDate, String missionEndDescription){
         if(active != null){
             completed = new Completed(this, active.startDate, landingDate, missionEndDate, missionEndDescription);
@@ -175,23 +252,36 @@ public class Mission  extends ObjectPlus{
             }
         }
     }
-    public void getMissionStatus(){
+
+    /**
+     * Return current mission status obtained from current state class
+     */
+    public String getMissionStatus(){
         if (planned != null){
-            planned.getMissionStatus();
+            return planned.getMissionStatus();
         }
         if (active != null){
-            active.getMissionStatus();
+            return active.getMissionStatus();
         }
         if ( completed != null){
-            completed.getMissionStatus();
+            return completed.getMissionStatus();
         }
         if ( failed != null){
-            failed.getMissionStatus();
+            return failed.getMissionStatus();
         }
+        return null;
     }
+
+    /**
+     * @return Basic mission information
+     */
     public String toString(){
         return "Mission " + getMissionCode() + " Satek: " + spaceCraft.name;
     }
+
+    /**
+     * @return Detailed mission report obtained from current state class
+     */
     public String getMissionRaport(){
         if (planned != null){
             return planned.getMissionReport();

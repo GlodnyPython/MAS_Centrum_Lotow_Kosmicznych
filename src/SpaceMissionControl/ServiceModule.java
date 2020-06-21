@@ -11,6 +11,10 @@ public abstract class ServiceModule  extends ObjectPlus{
 
     ArrayList<SpaceCraft> spaceCrafts = new ArrayList<>();
 
+    /**
+     * @param serialNumber
+     * @param ownMass
+     */
     public ServiceModule(String serialNumber, int ownMass){
         if(serialNumber == null){throw new NullPointerException("Serial number not given.");}
         this.serialNumber = serialNumber;
@@ -18,14 +22,25 @@ public abstract class ServiceModule  extends ObjectPlus{
         this.ownMass = ownMass;
     }
 
+    /**
+     * @return Return module's mass without cargo and fuel
+     */
     public int getOwnMass() {
         return ownMass;
     }
 
+    /**
+     * @param sc
+     *
+     * Assigns to spacecraft.
+     */
     public void assignToSpacecraft(SpaceCraft sc){
         spaceCrafts.add(sc);
     }
 
+    /**
+     * @param sc Removes spacecraft assignment
+     */
     public void unassignFromSpacecraft(SpaceCraft sc){
         spaceCrafts.remove(sc);
     }

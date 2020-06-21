@@ -11,21 +11,36 @@ public class Active  extends ObjectPlus{
     Date startDate;
     Date estimatedLandingDate;
 
+    /**
+     * @param misja
+     * @param startDate
+     * @param estimatedLandingDate
+     */
     public Active(Mission misja, Date startDate, Date estimatedLandingDate){
         this.mission = misja;
         this.startDate = startDate;
         this.estimatedLandingDate = estimatedLandingDate;
     }
 
+    /**
+     * @param misja
+     * @param startDate
+     */
     public Active(Mission misja, Date startDate){
         this.mission = misja;
         this.startDate = startDate;
     }
 
+    /**
+     * @return Current miision status (is called by class mission)
+     */
     public String getMissionStatus(){
         return "Aktywna";
     }
 
+    /**
+     * @return Detailed mission report with dated (is called by class mission)
+     */
     public String getMissionReport(){
         if(estimatedLandingDate == null){
             return mission.toString()
@@ -39,6 +54,9 @@ public class Active  extends ObjectPlus{
         }
     }
 
+    /**
+     *
+     */
     public void remove(){
         mission = null;
     }
