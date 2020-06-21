@@ -90,9 +90,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("WyborMisji.fxml"));
+        FXMLLoader root = new FXMLLoader(Main.class.getResource("WyborMisji.fxml"));
         stage.setTitle(Program.programs.get("DRAGON").name);
-        stage.setScene(new Scene(root, 426,685));
+        //stage.setScene(new Scene(root, 426,685));
 
     }
 }

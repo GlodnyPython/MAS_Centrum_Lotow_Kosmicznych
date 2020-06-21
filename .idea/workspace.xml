@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b057748d-3d1e-4b56-9c72-b0047739bac3" name="Default" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisjiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Active.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Completed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisji.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Ekran2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/MissionEkran.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Mission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/Planned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisjiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceMissionControl/WyborMisjiController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SpaceMissionControl.Main" />
       <module name="MAS_Centrum_Lotow_Kosmicznych" />
-      <option name="VM_PARAMETERS" value="--module-path /path/to/JavaFX/lib --add-modules=javafx.controls" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-11.0.2\lib&quot; --add-modules=javafx.controls" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -108,7 +102,7 @@
       <workItem from="1592507815469" duration="2711000" />
       <workItem from="1592567357206" duration="20636000" />
       <workItem from="1592635564878" duration="34679000" />
-      <workItem from="1592719996006" duration="6763000" />
+      <workItem from="1592719996006" duration="11201000" />
     </task>
     <task id="LOCAL-00001" summary="[VIP] Person and MissionSpecialist">
       <created>1592441519417</created>
@@ -215,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592688057347</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixes">
+      <created>1592731029997</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1592731029997</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,46 +257,50 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611723407" />
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592722507844">
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592734956410">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592722507844" />
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1592720570790">
+    <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734956410" />
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser" timestamp="1592732719301">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592720570790" />
-    <state x="1110" y="410" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1592611330010">
+    <state x="1085" y="406" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592732719301" />
+    <state x="1110" y="410" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1592734097590">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1110" y="410" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611330010" />
+    <state x="1110" y="410" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734097590" />
+    <state x="984" y="437" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1592732511531">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="984" y="437" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592732511531" />
     <state x="1063" y="594" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592684141883">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1063" y="594" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592684141883" />
-    <state x="1060" y="393" key="FileChooserDialogImpl" timestamp="1592611712617">
+    <state x="1060" y="393" key="FileChooserDialogImpl" timestamp="1592734754939">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="393" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592611712617" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592729244765">
+    <state x="1060" y="393" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734754939" />
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom" timestamp="1592735383990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592729244765" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1592729244765">
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592735383990" />
+    <state width="2517" height="404" key="GridCell.Tab.0.center" timestamp="1592735383990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592729244765" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1592729244765">
+    <state width="2517" height="404" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592735383990" />
+    <state width="2517" height="404" key="GridCell.Tab.0.left" timestamp="1592735383990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592729244765" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1592729244765">
+    <state width="2517" height="404" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592735383990" />
+    <state width="2517" height="404" key="GridCell.Tab.0.right" timestamp="1592735383990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592729244765" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1592722465619">
+    <state width="2517" height="404" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592735383990" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1592734098625">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592722465619" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1592734098625" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1592686738902">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
