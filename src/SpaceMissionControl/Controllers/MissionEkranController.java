@@ -31,7 +31,7 @@ public class MissionEkranController {
     @FXML
     private javafx.scene.control.Label labelEnd;
     @FXML
-    private javafx.scene.control.Label labelAbort;
+    private javafx.scene.control.Label labelAbort;//
 
 
 
