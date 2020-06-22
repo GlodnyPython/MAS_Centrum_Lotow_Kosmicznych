@@ -1,15 +1,18 @@
 package SpaceMissionControl;
 
+import SpaceMissionControl.Controllers.WyborMisjiController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.io.*;
 import java.sql.Timestamp;
 import java.util.Date;
-
 
 
 public class Main extends Application {
@@ -91,8 +94,21 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader root = new FXMLLoader(Main.class.getResource("WyborMisji.fxml"));
-        stage.setTitle(Program.programs.get("DRAGON").name);
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(this.getClass().getResource("fxml/WyborMisji.fxml"));
+        StackPane stackPane = loader.load();
+
+        WyborMisjiController controller = loader.getController();
+        controller.setProgram(Program.programs.get("DRAGON"));
+        Scene scene = new Scene(stackPane);
+
+        stage.setScene(scene);
+        stage.setTitle(Program.programs.get("DRAGON").missionMap.get(1).getMissionCode());
+        stage.show();
+
+        //FXMLLoader root = new FXMLLoader(Main.class.getResource("WyborMisji.fxml"));
+        //stage.setTitle(Program.programs.get("DRAGON").name);
         //stage.setScene(new Scene(root, 426,685));
 
     }

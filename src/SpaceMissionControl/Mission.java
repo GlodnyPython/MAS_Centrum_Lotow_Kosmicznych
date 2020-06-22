@@ -1,7 +1,5 @@
 package SpaceMissionControl;
 
-import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Mission  extends ObjectPlus{
@@ -268,6 +266,22 @@ public class Mission  extends ObjectPlus{
         }
         if ( failed != null){
             return failed.getMissionStatus();
+        }
+        return null;
+    }
+
+    public Date getMissionDate(){
+        if (planned != null){
+            return planned.plannedStartDate;
+        }
+        if (active != null){
+            return active.startDate;
+        }
+        if ( completed != null){
+            return completed.missionEndDate;
+        }
+        if ( failed != null){
+            return failed.failDate;
         }
         return null;
     }

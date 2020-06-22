@@ -6,7 +6,7 @@ public class Program  extends ObjectPlus{
 
     private static final long serialVersionUID = 1L;
 
-    static Map<String, Program> programs = new TreeMap<>();
+    public static Map<String, Program> programs = new TreeMap<>();
 
     String name;
     private String shortName;
